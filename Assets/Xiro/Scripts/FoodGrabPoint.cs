@@ -2,31 +2,34 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FoodGrabPoint : MonoBehaviour
+namespace XIRO
 {
-    public bool canGetFood;
-    public Food foodToGrab;
-
-    // Start is called before the first frame update
-    void Start()
+    public class FoodGrabPoint : MonoBehaviour
     {
-        canGetFood = false;
-    }
+        public bool canGetFood;
+        public Food foodToGrab;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+        // Start is called before the first frame update
+        void Start()
+        {
+            canGetFood = false;
+        }
 
-    private void OnTriggerEnter2D( Collider2D collision )
-    {
-        canGetFood = true;
-        foodToGrab = collision.gameObject.GetComponent<FoodOption>().food;
-    }
+        // Update is called once per frame
+        void Update()
+        {
 
-    private void OnTriggerExit2D( Collider2D collision )
-    {
-        canGetFood = false;
+        }
+
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            canGetFood = true;
+            foodToGrab = collision.gameObject.GetComponent<FoodOption>().food;
+        }
+
+        private void OnTriggerExit2D(Collider2D collision)
+        {
+            canGetFood = false;
+        }
     }
 }

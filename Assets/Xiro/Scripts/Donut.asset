@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3b0ceaf245c01b5429067e3f68f32f3f, type: 3}
-  m_Name: Sushi
+  m_Name: Donut
   m_EditorClassIdentifier: 
-  type: Sushi
-  sprite: {fileID: 21300000, guid: 2d7d0b616cfc6ef45ae2d77d6d934d99, type: 3}
+  type: Donut
+  sprite: {fileID: 21300000, guid: cada4e298796a5f42ba14d0490637d38, type: 3}

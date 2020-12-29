@@ -2,30 +2,33 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FoodOption : MonoBehaviour
+namespace XIRO
 {
-    public Food food;
-    public SpriteRenderer renderer;
-    public float timer;
-    public Transform start, end;
-
-    private float duration = 0f;
-
-    // Start is called before the first frame update
-    void Start()
+    public class FoodOption : MonoBehaviour
     {
-        renderer.sprite = food.sprite;
-    }
+        public Food food;
+        public SpriteRenderer renderer;
+        public float timer;
+        public Transform start, end;
 
-    // Update is called once per frame
-    void Update()
-    {
-        duration += Time.deltaTime;
+        private float duration = 0f;
 
-        float newX = Mathf.Lerp( start.position.x, end.position.x, duration/timer );
-        gameObject.transform.position = new Vector3( newX, gameObject.transform.position.y, gameObject.transform.position.z );
+        // Start is called before the first frame update
+        void Start()
+        {
+            renderer.sprite = food.sprite;
+        }
 
-        if( duration >= timer )
-            Destroy( gameObject );
+        // Update is called once per frame
+        void Update()
+        {
+            duration += Time.deltaTime;
+
+            float newX = Mathf.Lerp(start.position.x, end.position.x, duration / timer);
+            gameObject.transform.position = new Vector3(newX, gameObject.transform.position.y, gameObject.transform.position.z);
+
+            if (duration >= timer)
+                Destroy(gameObject);
+        }
     }
 }

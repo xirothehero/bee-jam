@@ -2,9 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Food")]
-public class Food : ScriptableObject
+
+namespace XIRO
 {
-    public string type;
-    public Sprite sprite;
+    [CreateAssetMenu(menuName = "Food")]
+    public class Food : ScriptableObject
+    {
+        public string type;
+        public Sprite sprite;
+    }
 }
