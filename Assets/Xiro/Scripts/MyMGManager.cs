@@ -39,6 +39,8 @@ namespace XIRO
 
                     if (selectedFood.type == targetFood.type)
                         MinigameManager.Instance.PlaySound("win");
+                    else
+                        MinigameManager.Instance.PlaySound("wrong");
                 }
             }
 

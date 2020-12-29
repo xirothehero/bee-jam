@@ -13,10 +13,16 @@ MonoBehaviour:
   m_Name: MyMinigame
   m_EditorClassIdentifier: 
   gameTime: 1
-  music: {fileID: 8300000, guid: efcdf0d075c96ff4d87dc64b85565f39, type: 3}
+  music: {fileID: 8300000, guid: 0333d4cbd213f114fa4b5b3fb0f1cca8, type: 3}
   sounds:
   - soundName: win
-    clip: {fileID: 8300000, guid: 43563de31a65b65409e47bb8f7497adc, type: 3}
+    clip: {fileID: 8300000, guid: 691e4202a29d447468a9feac20fe9618, type: 3}
+    volume: 1
+    minPitch: 1
+    maxPitch: 1
+    source: {fileID: 0}
+  - soundName: wrong
+    clip: {fileID: 8300000, guid: a71629a77d378664d8cc3bb10d13c765, type: 3}
     volume: 1
     minPitch: 1
     maxPitch: 1
